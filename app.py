@@ -6,8 +6,8 @@ from dash.dependencies import Input, Output
 
 import calc_square_wave
 
-# wave = calc_square_wave.generateSquareWave(30.63, 1)
-wave = calc_square_wave.generateSquareWavePWM(7843.13, 1, 19.21)
+wave = calc_square_wave.generateSquareWave(312.5, 1)
+# wave = calc_square_wave.generateSquareWavePWM(7843.13, 1, 19.21)
 x = wave["x"]
 y = wave["y"]
 titleX = wave["titleX"]
@@ -37,7 +37,7 @@ app.layout = html.Div(children=[
                 {'x': x, 'y': y, 'type': 'scatter', 'name': 'SF', 'line': dict(color='firebrick', width=5)},
             ],
             'layout': {
-                'title': 'Exercicio 49 - OC0A',
+                'title': 'Exercicio 50 - PD0',
                 'xaxis':{
                     'title': titleX
                 },
